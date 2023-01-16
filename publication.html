@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/publication.css">
+    <title>Environs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span>Environs
+                </span>
+            </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About Us </a></li>
+                <li><a href="/contact.html">Contact Us </a></li>
+                <li><a href="/donate.html">Charity</a></li>
+                <li><a href="/publication.html">Publication</a></li>
+
+                
+
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form input" type="text" name="query" placeholder="Blog Search">
+                <button class="btn">Search</button>
+            </form>
+
+
+        </div>
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img
+                        src="https://www.thestar.co.uk/webimg/b25lY21zOmExOGRjMTIzLTA3ZDUtNDVhZS04MDVhLWMxZjdmOTdiM2M0ZTo5MGEyNTdkYi04ZWU4LTQxYzYtYWQwYS1kM2JiM2VlNjI2Y2I=.jpg?width=640&quality=65&smart">
+            </div>
+                <div class="swiper-slide"><img
+                        src="https://events.boussias.com/wp-content/uploads/2022/02/840x560-19.jpg"></div>
+                <div class="swiper-slide"><img src="https://m.media-amazon.com/images/I/81MYQ6DwGsL.jpg"></div>
+                <div class="swiper-slide"><img
+                        src="https://www.thestar.co.uk/webimg/b25lY21zOmNiZTMzM2M1LWQzZDktNGZmMS04M2ZmLWI2NDk3Y2Y4ZjU5Nzo4YTNkOTFlYy0zNTJhLTQzMTktODNhOS0xY2YzNDEzNjdlNmM=.jpg?width=1200&enable=upscale">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://lgnsw.org.au/images/emails/AP_Environment/2022_environment_awards/LGNSW_ENVIRONMENT-AWARDS-LOGO.jpg">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://nausagar.nau.in/uploads/images/202211/image_750x_6363f61b9a5b8.jpg"></div>
+                <div class="swiper-slide"><img
+                        src="https://gumlet.assettype.com/freepressjournal/2022-10/21423169-00fb-491f-bd89-850669954c48/Untitled_design__28_.png?format=webp&w=480&dpr=2.6">
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+
+                },
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+
+            });
+
+
+
+        </script>
+    
+    
+</body>
+
+</html>
